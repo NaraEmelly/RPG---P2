@@ -1,4 +1,4 @@
-# Text Adventure Game
+# Luz & Sangue
 
 Este é um jogo de aventura em texto desenvolvido em Python. O jogo permite que os jogadores explorem um mundo interativo, enfrentem desafios, resolvam enigmas e interajam com personagens não-jogáveis (NPCs). As escolhas feitas pelo jogador influenciam o desenrolar da história e podem levar a diferentes finais.
 
