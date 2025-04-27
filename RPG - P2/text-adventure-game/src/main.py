@@ -7,3 +7,10 @@ import cmd
 import os
 import sys
 import intro
+import player
+import npcs
+import puzzle
+import escolhas
+import criaturas
+import capitulos
+
