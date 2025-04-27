@@ -1,4 +1,4 @@
-# Luz e Sangue 
+# Luz & Sangue
 
 Este é um jogo de aventura em texto desenvolvido em Python. O jogo permite que os jogadores explorem um mundo interativo, enfrentem desafios, resolvam enigmas e interajam com personagens não-jogáveis (NPCs). As escolhas feitas pelo jogador influenciam o desenrolar da história e podem levar a diferentes finais.
 
@@ -9,26 +9,15 @@ O projeto é organizado da seguinte forma:
 ```
 text-adventure-game
 ├── src
-│   ├── main.py          # Ponto de entrada do jogo
-│   ├── cenas           # Módulo que contém as diferentes cenas do jogo
-│   │   ├── __init__.py
-│   │   ├── intro.py     # Cena de introdução
-│   │   ├── combate.py    # Lógica de combate
-│   │   ├── puzzle.py     # Lógica de enigmas
-│   │   └── finais.py    # Finais do jogo
-│   ├── personagens       # Módulo que contém as classes de personagens
-│   │   ├── __init__.py
-│   │   ├── npc.py       # Classe para NPCs
-│   │   └── player.py    # Classe para o jogador
-│   ├── inventários        # Módulo que contém a lógica de inventário
-│   │   ├── __init__.py
-│   │   └── items.py     # Itens do jogo
-│   ├── utilitários      # Módulo de utilitários
-│   │   ├── __init__.py
-│   │   └── helpers.py    # Funções auxiliares
-│   └── pontuação        # Módulo de pontuação
-│       ├── __init__.py
-│       └── tracker.py    # Lógica de rastreamento de pontuação
+│   ├── main.py        # Ponto de entrada do jogo (arquivo pricipal)
+│   ├── intro.py       # Introdução Narrativa
+│   ├── player.py      # Ficha do personagem
+│   ├── escolhas.py    # Sistema de escolhas
+│   ├── capitulos.py   # Contem capitulos principais
+│   ├── npcs.py        # Módulo que contém as classes de personagens
+│   ├── criaturas.py   # Inimigos e chefes; Descreve combates
+│   ├── puzzle.py      # Todos os enigmas do jogo
+│   ├── final.py       # Qual final o jogador alcançou
 ├── requirements.txt     # Dependências do projeto
 └── README.md            # Documentação do projeto
 ```
