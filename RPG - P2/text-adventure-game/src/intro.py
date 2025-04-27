@@ -69,4 +69,3 @@ def narracao1():
 
 narracao1()
 
-
