@@ -22,6 +22,11 @@ def menu():
     if jogar == "1":
         print("\n~~ Jogo iniciado...")
         time.sleep(0.05)
+
+    else:
+        print("\n~~ Jogo encerrado...")
+        time.sleep(0.05)
+        exit()
 menu()
 os.system('cls' if os.name == 'nt' else 'clear')
 
