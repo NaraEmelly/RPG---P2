@@ -8,12 +8,12 @@ import cmd
 
 def cena_acordar_caverna():
     narrativa2 = [
-        "Um som gélido ecoa pela escuridão...",
-        "Você desperta, os olhos ainda pesados, em meio a sombras opressoras.",
+        "Um som do vazio ecoa pela escuridão...",
+        "Você desperta, os olhos ainda pesados, em meio ao caos da escuridão.",
         "Correntes frias apertam seus pulsos, prendendo-o às pedras ásperas da caverna.",
         "O ar cheira a umidade e decadência, e o som distante de gotas d'água ressoa como tambores de solidão.",
-        "Seus instintos gritam: você precisa se libertar.",
-        "Mas a quem pertence esta prisão? E o que te aguarda além dela?",
+        "Seus instintos gritam: VOCÊ PRECISA SE LIBERTAR !!!.",
+        "Mas a quem pertence esta caverna? E o que te aguarda além dela?",
     ]
     
     for linha in narrativa2:
@@ -28,3 +28,4 @@ def cena_acordar_caverna():
 time.sleep(2)
 os.system('cls' if os.name == 'nt' else 'clear')
 cena_acordar_caverna()
+
