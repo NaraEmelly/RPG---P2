@@ -108,5 +108,3 @@ def narracao1():
         time.sleep(1.5)  # pausa entre as frases para dar efeito cinematográfico
 
 narracao1()
-
-
