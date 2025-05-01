@@ -1,28 +1,23 @@
-import cmd
-import sy
-
-class Player:  # Atributo do jogador
-    def __init__(self):
-        self.nome = "Kael"
-        self.classe = "Guerreiro da Névoa"
-        self.força = 7
-        self.agilidade = 5
-        self.resistencia = 6
-        self.inteligencia = 4
-        self.fe_luz = 3
-        self.corrupcao_trevas = 0  # Vai aumentando conforme o jogador faz escolhas sombrias
-        self.hp = 100
-        self.itens = ["Chicote de Sangue", "Poção de Vida"]
-        
-
-    def __str__(self):
-        return (
-            f"Nome: {self.nome}, Classe: {self.classe}, Força: {self.força}, "
-            f"Agilidade: {self.agilidade}, Resistência: {self.resistencia}, "
-            f"Inteligência: {self.inteligencia}, Fé na Luz: {self.fe_luz}, "
-            f"Corrupção das Trevas: {self.corrupcao_trevas}, Vida: {self.hp}"
-        )
 
 
 
+
+player = {
+    'nome': "Kael",
+    'level': 1,
+    'exp': 0,
+    'exp_max': 50,
+    'hp': 100,
+    'hp_max': 100,
+    'dano': 25,
+    'corrupcao': 0,  # Novo atributo para rastrear a corrupção
+    'corrupcao_max': 100,  # Limite máximo de corrupção
+}
+
+def aumentar_corrupcao(jogador, quantidade):
+    jogador['corrupcao'] += quantidade
+    if jogador['corrupcao'] >= jogador['corrupcao_max']:
+        print(f"{jogador['nome']} foi consumido pelas sombras!")
+        # Aqui é para implementar o final sombrio do jogo (final ruim)
+        # Podemos adicionar lógica para encerrar o jogo ou recomeçar 
 
