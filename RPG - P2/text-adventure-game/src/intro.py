@@ -1,20 +1,25 @@
 import time
 import os
 import sys
-from utils import clear_screen
+
 
 def menu():
-    clear_screen()
-    print('''
-██╗░░░░░██╗░░░██╗███████╗  ███████╗  ░██████╗░█████╗░███╗░░██╗░██████╗░██╗░░░██╗███████╗
-██║░░░░░██║░░░██║╚════██║  ██╔════╝  ██╔════╝██╔══██╗████╗░██║██╔════╝░██║░░░██║██╔════╝
-██║░░░░░██║░░░██║░░███╔═╝  █████╗░░  ╚█████╗░███████║██╔██╗██║██║░░██╗░██║░░░██║█████╗░░
-██║░░░░░██║░░░██║██╔══╝░░  ██╔══╝░░  ░╚═══██╗██╔══██║██║╚████║██║░░╚██╗██║░░░██║██╔══╝░░
-███████╗╚██████╔╝███████╗  ███████╗  ██████╔╝██║░░██║██║░╚███║╚██████╔╝╚██████╔╝███████╗
-╚══════╝░╚═════╝░╚══════╝  ╚══════╝  ╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░░╚═════╝░╚══════╝''')
     
-    print("\n[[[[[1. Jogar]]]]]")
-    print("\n[[[[[2. Sair]]]]]")
+    print('''
+ ██▓     █    ██ ▒███████▒   ▓█████      ██████  ▄▄▄       ███▄    █   ▄████  █    ██ ▓█████ 
+▓██▒     ██  ▓██▒▒ ▒ ▒ ▄▀░   ▓█   ▀    ▒██    ▒ ▒████▄     ██ ▀█   █  ██▒ ▀█▒ ██  ▓██▒▓█   ▀ 
+▒██░    ▓██  ▒██░░ ▒ ▄▀▒░    ▒███      ░ ▓██▄   ▒██  ▀█▄  ▓██  ▀█ ██▒▒██░▄▄▄░▓██  ▒██░▒███   
+▒██░    ▓▓█  ░██░  ▄▀▒   ░   ▒▓█  ▄      ▒   ██▒░██▄▄▄▄██ ▓██▒  ▐▌██▒░▓█  ██▓▓▓█  ░██░▒▓█  ▄ 
+░██████▒▒▒█████▓ ▒███████▒   ░▒████▒   ▒██████▒▒ ▓█   ▓██▒▒██░   ▓██░░▒▓███▀▒▒▒█████▓ ░▒████▒
+░ ▒░▓  ░░▒▓▒ ▒ ▒ ░▒▒ ▓░▒░▒   ░░ ▒░ ░   ▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒  ░▒   ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░
+░ ░ ▒  ░░░▒░ ░ ░ ░░▒ ▒ ░ ▒    ░ ░  ░   ░ ░▒  ░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░  ░   ░ ░░▒░ ░ ░  ░ ░  ░
+  ░ ░    ░░░ ░ ░ ░ ░ ░ ░ ░      ░      ░  ░  ░    ░   ▒      ░   ░ ░ ░ ░   ░  ░░░ ░ ░    ░   
+    ░  ░   ░       ░ ░          ░  ░         ░        ░  ░         ░       ░    ░        ░  ░
+                 ░                                                                           
+''')
+    
+    print("\n||||| 1. Jogar |||||")
+    print("\n||||| 2. Sair  |||||")
     print("\n>> Selecione uma opção: ", end="")
     jogar = input()
 
@@ -25,10 +30,12 @@ def menu():
         print("\n~~ Jogo encerrado...")
         time.sleep(1)
         exit()
+menu()
+os.system('cls' if os.name == 'nt' else 'clear')
 
 def narracao_intro():
     narrativa = [
-        "Há muito tempo, antes que as estrelas esquecessem seus nomes...",
+        "\nHá muito tempo, antes que as estrelas esquecessem seus nomes...",
         "O continente de Aeloria florescia sob o olhar da Deusa Lumina.",
         "A Espada Estelar, forjada pelas mãos dos Filhos da Aurora, mantinha o equilíbrio entre luz e trevas.",
         "Mas a ambição dos homens foi maior que sua fé...",
@@ -46,6 +53,9 @@ def narracao_intro():
             time.sleep(0.03)
         print()
         time.sleep(1.5)
+        
+narracao_intro()
+os.system('cls' if os.name == 'nt' else 'clear')
 
 def narracao1():
     narrativa1 = [
@@ -64,11 +74,9 @@ def narracao1():
             sys.stdout.flush()
             time.sleep(0.03)
         print()
-        time.sleep(1.5)
+        time.sleep(4)
+narracao1()
+os.system('cls' if os.name == 'nt' else 'clear')
 
-def show_intro():
-    menu()
-    narracao_intro()
-    clear_screen()
-    narracao1()
-    clear_screen()
+    
+    
