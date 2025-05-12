@@ -1,44 +1,45 @@
-# filepath: text-adventure-game/text-adventure-game/src/main.py
-#arquivo principal do jogo
-
-import random   
+import random
 import time
-import cmd
 import os
 import sys
-import intro
-import escolhas
+from intro import menu, narracao_intro, narracao1
+from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3
+from player import Player
 
-main = True
-while main:
+
+def main():
     
-    
-   
-    
-    
+
     # Chama a função de menu do arquivo intro.py
-    intro.menu()
+    menu()
     os.system('cls' if os.name == 'nt' else 'clear')
-    
+
     # Chama a função de narração do arquivo intro.py
-    intro.narracao_intro()
-    os.system('cls' if os.name == 'nt' else 'clear')
-    
-    # Chama a função de narração do arquivo escolhas.py
-    escolhas.cena_1()
+    narracao_intro()
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    escolhas.escolhas_1()
+    narracao1()
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    escolhas.cena_2()
+    # Inicia a primeira cena
+    cena_1()
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    escolhas.escolhas_2()
+    escolhas_1()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    cena_2()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    escolhas_2()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    cena_3()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    escolhas_3()
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-
-    
-    
-
+if __name__ == "__main__":
+    main()

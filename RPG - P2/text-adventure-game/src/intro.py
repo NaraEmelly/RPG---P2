@@ -1,6 +1,9 @@
 import time
 import os
 import sys
+from player import Player  # Importa a classe Player
+
+# Criar jogador e nomear
 
 
 def menu():
@@ -22,16 +25,17 @@ def menu():
     print("\n||||| 2. Sair  |||||")
     print("\n>> Selecione uma opção: ", end="")
     jogar = input()
+    
 
     if jogar == "1":
-        print("\n~~ Jogo iniciado...")
-        time.sleep(1)
+        return True
     else:
-        print("\n~~ Jogo encerrado...")
-        time.sleep(1)
-        exit()
+        exit = input("\n~~ Você escolheu sair do jogo. Pressione qualquer tecla para encerrar... ")
+        return False
+        
 menu()
-os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.name == 'nt' else 'clear')    
+
 
 def narracao_intro():
     narrativa = [
@@ -58,8 +62,9 @@ narracao_intro()
 os.system('cls' if os.name == 'nt' else 'clear')
 
 def narracao1():
+    
     narrativa1 = [
-        "Você é Kael, um Vigia da Brumia.",
+        f"Você é um Vigia da Brumia.",
         "Seu corpo, uma sombra do que era, agora é um eco de dor e solidão.",
         "Mas dentro de você, uma centelha de esperança ainda brilha.",
         "Você deve reunir os fragmentos da Espada Estelar e restaurar o equilíbrio em Aeloria.",
@@ -78,5 +83,5 @@ def narracao1():
 narracao1()
 os.system('cls' if os.name == 'nt' else 'clear')
 
-    
-    
+
+
