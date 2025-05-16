@@ -111,7 +111,7 @@ escolhas_2()
 
 def cena_3(): # tambem é a escolha 3
     global item_escolhido
-    print("||||| CENA 4: O QUE SERÁ? ONDE DARÁ? |||||")
+    print("||||| CENA 3: O QUE SERÁ? ONDE DARÁ? |||||")
     print(r"""    
 88888888888888888888888888888888888888888888888888888888888888888888888
 88.._|      | `-.  | `.  -_-_ _-_  _-  _- -_ -  .'|   |.'|     |  _..88

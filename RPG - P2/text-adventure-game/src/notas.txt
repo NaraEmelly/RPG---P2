@@ -1,0 +1,71 @@
+# BLOCO DE NOTAS #
+
+* História do Personagem Kael * - NAY.2025
+
+  Kael, você é o último de sua linhagem: um povo antigo encarregado de guardar a Espada Estelar, 
+  uma arma que selou o Lorde Varkas, portador das trevas eternas. Porém, algo falhou. 
+  (Kael acorda no subterrâneo do Templo da Aurora, acorrentado, com memórias quebradas e o mundo em ruínas. 
+  A Espada Estelar foi dividida em quatro fragmentos e corrompida.) >> parte da primeira cena do jogo 
+
+  - SOBRE Aurora:
+    É um continente dividido entre territórios de luz e sombra. De um lado, as florestas mágicas e templos esquecidos:
+    do outro, os pântanos amaldiçoados etc.. 
+
+1. Introdução / Prólogo: 
+
+ Introduz Kael, o mundo corrompido e a missão: reunir os 4 fragmentos da Espada Estelar.
+Apresenta as primeiras escolhas (como escapar do templo): 
+ideal para ensinar o jogador como funciona o sistema de escolhas.
+
+2. Capítulos Principais (1 por fragmento):
+
+Cada capítulo deve conter:
+                                                                               (BIEL.2025)
+- Uma ambientação nova (florestas, ruínas, vilas amaldiçoadas pelas sombras, animais pacíficos, criaturas horrendas{sobrevivencia}).
+- Um NPC importante (com falas que reagem às escolhas anteriores). (pode ajudar kael ou não)
+- Um enigma e um "chefe".
+- Uma decisão crítica que influencia a história (e os finais).
+
+3. Três Finais Possíveis
+
+I Ruína: Kael se torna o novo Lorde Varkas das Sombras.
+
+II Esperança: Kael purifica tudo e some com a espada trazendo paz e quilibrio entre a luz e a sombra.
+
+III Desistencia ou morte: Kael descide desistir e é consumido pelas sombras pela sua falta de fé.
+
+
+* NPCS 2ª , ANIMAIS & Criaturas (marcantes) * MANU.2025
+
+Elandra: A Tecelã de Lamentos
+  Descrição: Uma antiga vidente cega que vive entre fios de almas costurados nas paredes do Santuário de Ecos.
+  Papel: Guia mística que revela memórias perdidas e profecias. Pode ajudar a enganar, dependendo da confiança do jogador.
+  Relacionamento com o Kael: Foi quem teceu o véu que escondeu Kael de seu destino.
+  Frase-Chave: "Nem todo fio deve ser puxado, criança das correntes."
+
+Nyra: A Risada no Vazio
+  Descrição: Uma criança espectral que surge em locais amaldiçoados, cantando canções antigas.
+  Papel: Indica caminhos secretos e segredos perdidos -- Mas pode invocar terrores se contrariada.
+  Relacionamento com Kael: Ligada a uma memória reprimida de um sacrifício feito por Kael.
+  Frase-Chave: "Você lembra quando me deixou cair?"
+
+Merrik: O Ferreiro das Cinzas
+  Descrição: Um ferreiro sem rosto que forja armas com lembranças de guerreiros caídos.
+  Papel: Comerciante e fornecedor de armas únicas. Pode se sacrificar para fundir sua essência a um item-chave.
+  Relacionamento com Kael: Carrega a memória do mestre de Kael da infância.
+  Frase-Chave: "Cada lâmina tem um preço. O seu é pesado."
+
+Nymel: O espelho d'água
+  Descrição: Uma criatura líquida, sem forma, que habita lagos sagrados. Assume formas suaves e acolhedoras diante dos justos.
+  Comportamento: Reage a emoções humanas. Pode acalmar ou refletir o estado interior de quem se aproxima.
+  Curiosidade: Beber da água onde um Nymel descansa pode curar, também fazer lembrar o que foi esquecidos, porem só funciona 1x a cada mês.
+
+
+
+
+
+
+
+
+
+
