@@ -1,7 +1,7 @@
 import time
 import os
 import sys
-from player import Player  # Importa a classe Player
+
 
 # Criar jogador e nomear
 
@@ -21,17 +21,17 @@ def menu():
                  ░                                                                           
 ''')
     
-    print("\n||||| 1. Jogar |||||")
-    print("\n||||| 2. Sair  |||||")
-    print("\n>> Selecione uma opção: ", end="")
+    print(r"""                              ||||||||{ 1. Jogar }||||||||""")
+    print(r"""                              ||||||||{ 2. Sair  }||||||||""")
+    print("\n>>  ", end="")
     jogar = input()
     
 
     if jogar == "1":
         return True
     else:
-        exit = input("\n~~ Você escolheu sair do jogo. Pressione qualquer tecla para encerrar... ")
-        return False
+        input("\n~~ Você escolheu sair do jogo. Pressione qualquer tecla para encerrar... ")
+        exit()
         
 menu()
 os.system('cls' if os.name == 'nt' else 'clear')    
@@ -64,14 +64,9 @@ os.system('cls' if os.name == 'nt' else 'clear')
 def narracao1():
     
     narrativa1 = [
-        f"Você é um Vigia da Brumia.",
+        f"Kael é o Vigia da Brumia.",
         "Seu corpo, uma sombra do que era, agora é um eco de dor e solidão.",
-        "Mas dentro de você, uma centelha de esperança ainda brilha.",
-        "Você deve reunir os fragmentos da Espada Estelar e restaurar o equilíbrio em Aeloria.",
-        "Mas cuidado...",
-        "A escuridão não é apenas uma força externa. Ela também habita dentro de nós.",
-        "E a escolha entre luz e sombra pode ser mais difícil do que parece.",
-    ]
+        "Mas dentro dele, uma centelha de esperança ainda brilha.",]
     
     for linha in narrativa1:
         for caractere in linha:
@@ -82,6 +77,23 @@ def narracao1():
         time.sleep(4)
 narracao1()
 os.system('cls' if os.name == 'nt' else 'clear')
+    
+def narracao2():
 
+    narrativa2 = [
+        f"Você deve fazer que Kael reuna os fragmentos da Espada Estelar e restaurar o equilíbrio em Aurora.",
+        "\nMas cuidado...",
+        "\nA escuridão não é apenas uma força externa. Ela também habita dentro de nós.",
+        "E as escolhas podem ser mais difícil do que parece.",]
+    
+    for linha in narrativa2:
+        for caractere in linha:
+            sys.stdout.write(caractere)
+            sys.stdout.flush()
+            time.sleep(0.03)
+        print()
+        time.sleep(4)
+narracao2()
+os.system('cls' if os.name == 'nt' else 'clear')
 
 

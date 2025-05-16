@@ -2,9 +2,9 @@ import random
 import time
 import os
 import sys
-from intro import menu, narracao_intro, narracao1
-from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3
-from player import Player
+from intro import menu, narracao_intro, narracao1, narracao2
+from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3
+
 
 
 def main():
@@ -35,6 +35,9 @@ def main():
     os.system('cls' if os.name == 'nt' else 'clear')
 
     cena_3()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    escolha_3()
     os.system('cls' if os.name == 'nt' else 'clear')
 
     
