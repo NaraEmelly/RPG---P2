@@ -3,7 +3,7 @@ import time
 import os
 import sys
 from intro import menu, narracao_intro, narracao1, narracao2
-from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3
+from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3
 
 
 
