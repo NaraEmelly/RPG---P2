@@ -2,6 +2,9 @@ import random
 import time
 import os
 import sys
+import colorama
+from colorama import Fore
+from colorama import Style
 from intro import menu, narracao_intro, historia, narracao1, narracao2
 from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3
 

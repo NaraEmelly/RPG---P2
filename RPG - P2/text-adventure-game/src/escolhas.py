@@ -2,7 +2,9 @@ import random
 import time
 import os
 import sys
-
+import colorama 
+from colorama import Fore 
+from colorama import Style
 
 def cena_1():
     print("||||| Cena 1: O Despertar |||||")
