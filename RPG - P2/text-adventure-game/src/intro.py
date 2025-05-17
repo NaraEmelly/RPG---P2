@@ -1,6 +1,9 @@
 import time
 import os
 import sys
+import colorama 
+from colorama import Style
+from colorama import Fore
 
 
 # Criar jogador e nomear
@@ -40,7 +43,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 def narracao_intro():
     narrativa = [
         "\nHá muito tempo, antes que as estrelas esquecessem seus nomes...",
-        "O continente de Aeloria florescia sob o olhar da Deusa Lumina.",
+        "O continente de Aurora florescia sob o olhar da Deusa Lumina.",
         "A Espada Estelar, forjada pelas mãos dos Filhos da Aurora, mantinha o equilíbrio entre luz e trevas.",
         "Mas a ambição dos homens foi maior que sua fé...",
         "O Lorde Varkas, seduzido pelo sussurro das sombras, traiu a luz e rasgou o véu da eternidade.",
@@ -61,9 +64,9 @@ def narracao_intro():
 narracao_intro()
 os.system('cls' if os.name == 'nt' else 'clear')
 
-def historia():    
+def historia_varkas():    
     varkas = [
-        "Há muito tempo atras, no reino de Aeloria,",
+        "Há muito tempo atras, no reino de Aurara,",
         "um jovem cavaleiro chamado Varkas convivia com os habitantes e era respeitado por todos.",
         "Desde pequeno, Varkas foi treinado pelos seus pais para proteger os inocentes,", 
         "seguindo os preceitos da Ordem da Luz, um grupo sagrado de guardiões que defendia o reino de ameaças mágicas e monstruosas da escuridão.",
@@ -87,10 +90,15 @@ def historia():
         "decidiu se tornar um líder da escuridão e criar o seu império",
         "e agora ele deseja buscar a espada da luz para converte-la em trevas e criar um novo mundo",
     ]
+    for linha in varkas:
+        for caractere in linha:
+            sys.stdout.write(caractere)
+            sys.stdout.flush()
+            time.sleep(0.03)
+        print()
+        time.sleep(1.5)  
         
-    
-        
-historia()
+historia_varkas()
 os.system('cls' if os.name == 'nt' else 'clear')
 
 def narracao1():

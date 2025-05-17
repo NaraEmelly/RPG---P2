@@ -6,6 +6,8 @@ import colorama
 from colorama import Fore 
 from colorama import Style
 
+
+
 def cena_1():
     print("||||| Cena 1: O Despertar |||||")
     narrador = [
@@ -168,50 +170,8 @@ def cena_3(): # tambem é a escolha 3
         print("\nVocê explora o templo e percebe uma estatua meio medonha de mais de 6m de altura.",
         "De alguma forma te dar calafrios.")
         
-        print(r"""@@#+::::-=::::=++++*+++===-:::-:::=-=-=::::::==::-+@@@@
-#+-:::::::::-=++++=++=--::-----::-=+++*+--::-::::::@@@@
-=:::::::::-++++==---==------------::::=+++=-::.::.=@@@@
-+::::::-==++==::-++**-=---=-:---+##*-::-=+**+=::::+@@@@
-*:::-==+++=--::-%@@@@*=-------=*%%@@@*=-:-=+++=-::*@@@@
-%:-=+++++-:=:=#@@%#**++==--=--*+++++*%@%*-::-====-*@@@@
-@+*++==-::=#%@@%#+*++***===*++++++++++*#@@#=:::===#@@@@
-@%++=:--=#@@@@%*++*++*+**=:++++=++++***==+#@#=:::--*%@@
-#+=::++**@@@%=++==+**++*+++++=+=++++**+----=#++-:..:=*%
-=-::-*#**@@*:::-=+=-=======-=-:==-=-===***-::+=++-..::-
-:::=***-#*-::===--=+++=+---:::-*++*++*++++:::=+:=+=-...
-::**+=-+*=-:-=+*+++++==+-=::-=-*++*+*****+=---+-:===+-.
--*%+-==+---=*+++**++*+++===-==+*++***##****+*=++-::=*+-
-+*#+:-#=+=***+#%@@%**+++-+=:==%*++*%@@@@@%*##==+-..-++-
-+**=:+===###%@@@@@@@%%*+==-::=*%##%@@@%%@@@##+=*:..-++-
-+**=:++=##%@@@@@+#@%%#**:+-:--:-+*%@@@#%%%###=+*:..-++=
-*+*--=*-##%#*#%%#**+*##+::--=-::*++***+#*****==+-..:=-=
-++*-:=+-=*=++**=====*#=-::-++-:::+=-===++=+=--:+=:.:=-=
-+++::++--===+*==-:-=+=:::--##+==-:-=++=++=-::::=+:.:=:-
-++-.:++-:::=::::-==--:-=+-+==--+++=::-=-::=-:::-+-:.=:-
-++:::=+:::--::---:::-==---#-:+====++=::---:=-:::+==.:-.
-+=::--+::-=:--::::-+=-::-=+=-++=-:::-==-::::+::-==-:.-.
-+-::==*=++:::::::-::::.::::--:::.::::::--:::-=::-=-:.-:
---:--*+-++===-::::::::::--::--=+++-:::::----==+=:=::..-
-:---:*-+--*++:::::::-+%@%%@@@@@@@@@%#+-:::-+**++=--:..=
-==:-:+-+:*%*=:::-+#%@@@@#@@@@%#@@@@@@@@%#+=-+%%+:+*:..:
-+::---+*-*@@%%%%@@#%*#==:=*:=-:*--#+%%%@@@@@@@%**++-...
-::::=-+*+-*@@@@%+*:-:-.::::.-::+::-.+:*=#%@@@#**++:-...
-::::-:+%*+-+@@#+--:=-*:=:--:+-=+-==:-:=:=+%%*=#*+-:-:::
-:::-::+@##-=+@%*===::+.-.-..:..-:-.-:=:=+##-*+#*#-:-:::
-:::-::+@%#=+-=%%*==-::.-::::-..-:-:-:-:=**:*+=###--:::-
-:::-::+%@%+*=--*@%%*##+#+**-#:+-=++-+=*%=-**++%@*=-:=::
-::-:::**@@#*+--:=%@@@@@@@@@@@%@%@@@%@@*-=++++%@%++=--::
-:::::=*+#@@#*=--::=#@@@@@@@@@@@@@@@%#=-=-==+#@@+++:::::
-:-::==+=+@@@#*=-=--:-***#%@@@@@%#+=---::---*@%#++-:::::
-:-:-==+==*%@@#*-=*=--::::-=---::--=-:::::-+@%#+++=-=+=-
-:::===+===*%@@%+-=*-------::-=+***=-:::::+%%%*=++=:::::
--::===+==--#%@@@*--+-:::==-==+*+-::::::-#@@%**==++:::::
-:.:-===-=-:=%@@@@#---:::::::--::::--::*@%%+-+*=--+::::-
-::--==-:=-:-*%%%@@%-:--::::::::::---+%@%#+::+*=:-+-::::
-:::==*::=-:--*%%%%@%+=--:--:-:::::=#%%%**-::=*=::+=.:::
-:::-+*::=-:-:=+*###%%%%#*+++++**#%%%%#=-+:::==-::=+::-=
--::=#=::=::-::+++++***####%###*###*+++::-:::-=::::=--++
--::=#-::-::-:-++***++++#**#*****++#**-::::::--...:-+==-
+        print(r"""
+        
 """)
         print("\nKael: AAH SENTIR UM CALAFRIO O QUE SERÁ ESSA ESTÁTUA? ME SINTO OBSERVADO.")
 
@@ -284,23 +244,28 @@ def cena_4():
 
     if escolha == "1":
         item_escolhido = "pedaço do enigma"
-        print("ele abre a porta da esquerda e se depara com um bau, ele abre e encontra um pedaço de papel com uma mensagem escrita:")
+        print("Ele abre a porta da esquerda e se depara com um bau, ele abre e encontra um pedaço de papel com uma mensagem escrita:")
         print("\nKael: O que é isso? Parece uma mensagem...")
-        print("\nEle abre: em um templo de misterios antigos, uma estatua estranha o faz refletir. Não é um Deus, nem um heroi, mas a resposta está diante de você.")
+        print("\n|||Mensagem||| " \
+        "\n'Em um templo de misterios antigos, " \
+        "Uma estatua o faz refletir. " \
+        "Não é um Deus, nem um heroi, " \
+        "Mas a resposta está diante de você.'")
         print("\nKael: O que isso significa?")
-        print("'você obteve pedaço do enigma'")
+        print("\n[ Kael obteve pedaço do enigma ]")
 
     elif escolha == "2":
-        print("ele abre a porta do meio e se depara com uma pessoa sentada em um trono, com os olhos que parecem estar te observando.")
+        print("Kael abre a porta do meio e se depara com uma pessoa sentada em um trono, com os olhos que parecem estar te observando.")
+        #Adicionar art  pessoa sentada em um trono
         print("\nKael: Quem é você? 'ao se aproximar, ele percebe que não tem nenhum corpo, apenas uma sombra.'")
         print("\nKael: O que você quer de mim? 'a sombra não responde, apenas observa.'")
         print("\nEntão ele sai da sala e fecha a porta.")
         return cena_4()
     
     elif escolha == "3":
-        print("ele abre a porta da direita e se depara com uma mensagem escrita na parede:")
-        print("\n'A ESTATUA É A RESPOSTA'")
-    # ADICIONAR O CAMINHO DAS ESCOLHAS
+        print("Ele abre a porta da direita e se depara com uma mensagem escrita na parede:")
+        print("\n'A ESTATUA É A RESPOSTA'")# adicionar art ascii text
+    
 
     else:
         print("\nEscolha inválida. Tente novamente.")
@@ -316,3 +281,4 @@ def escolhas_4():
 
     print()
 
+# ADICIONAR O CAMINHO DAS ESCOLHAS
