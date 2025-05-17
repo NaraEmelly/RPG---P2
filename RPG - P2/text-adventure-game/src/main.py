@@ -2,7 +2,7 @@ import random
 import time
 import os
 import sys
-from intro import menu, narracao_intro, narracao1, narracao2
+from intro import menu, narracao_intro, historia, narracao1, narracao2
 from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3
 
 
@@ -16,6 +16,9 @@ def main():
 
     # Chama a função de narração do arquivo intro.py
     narracao_intro()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    historia()
     os.system('cls' if os.name == 'nt' else 'clear')
 
     narracao1()
@@ -37,7 +40,7 @@ def main():
     cena_3()
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    escolha_3()
+    escolhas_3()
     os.system('cls' if os.name == 'nt' else 'clear')
 
     

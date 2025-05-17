@@ -49,7 +49,7 @@ def narracao_intro():
         "E agora, enquanto a Noite Eterna se aproxima...",
         "O último dos Vigias desperta de um sono forçado, acorrentado sob as ruínas do Templo da Aurora.",
     ]
-
+    
     for linha in narrativa:
         for caractere in linha:
             sys.stdout.write(caractere)
@@ -59,6 +59,38 @@ def narracao_intro():
         time.sleep(1.5)
         
 narracao_intro()
+os.system('cls' if os.name == 'nt' else 'clear')
+
+def historia():    
+    varkas = [
+        "Há muito tempo atras, no reino de Aeloria,",
+        "um jovem cavaleiro chamado Varkas convivia com os habitantes e era respeitado por todos.",
+        "Desde pequeno, Varkas foi treinado pelos seus pais para proteger os inocentes,", 
+        "seguindo os preceitos da Ordem da Luz, um grupo sagrado de guardiões que defendia o reino de ameaças mágicas e monstruosas da escuridão.",
+        "Com o passar dos anos, Varkas reconhecido pelos seus feitos nas comunidades, foi chamado para participar da Ordem da Luz,",
+        "tendo mais reconhecimento na sociedade,", 
+        "mas a verdade é que o mundo nem sempre recompensa os bons.",
+        "Durante uma missão para recuperar o mapa da espada da luz,",
+        "Varkas e seu pelotão foram traídos pelos soldados do reino que temia o crescimento de seu poder e popularidade.", 
+        "A emboscada matou todos os seus companheiros.",
+        "Varkas sobreviveu, gravemente ferido, apenas para ser acusado de traição ao retornar.",
+        "Humilhado publicamente, expulso da Ordem e rejeitado por aqueles que um dia o adoraram,", 
+        "Varkas foi julgado por ter matado todos do pelotão,",
+        "porem, Lumina viu a escuridão manipulando ele e o deixou sair ileso, por ter visto que ele não os matou,",
+        "mas o jogou nas masmorras do reino,",
+        "quando Varkas saiu, com seu ódio criou um grupo de ANTILUMINOS para fazer uma rebelião,",
+        "contudo, seu grupo foi capturado, massacrado, torturado e morto pelos guardas imperiais da luz,",
+        "fazendo ele ficar com um extremo ódio ascendente em seu peito,", 
+        "despertando assim seu grandioso poder da escuridão e traindo completamente a luz,",  
+        "com seu poder divino, ele destruiu vilas, templos e matou famílias e cidadãos inocentes,",
+        "percebendo o quão forte ele era,",
+        "decidiu se tornar um líder da escuridão e criar o seu império",
+        "e agora ele deseja buscar a espada da luz para converte-la em trevas e criar um novo mundo",
+    ]
+        
+    
+        
+historia()
 os.system('cls' if os.name == 'nt' else 'clear')
 
 def narracao1():
