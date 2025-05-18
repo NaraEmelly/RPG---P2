@@ -2,8 +2,7 @@ import time
 import os
 import sys
 import colorama 
-from colorama import Style
-from colorama import Fore
+from colorama import Fore, Back, Style
 
 
 # Criar jogador e nomear
@@ -11,7 +10,7 @@ from colorama import Fore
 
 def menu():
     
-    print('''
+    logo = Fore.RED + '''
  ██▓     █    ██ ▒███████▒   ▓█████      ██████  ▄▄▄       ███▄    █   ▄████  █    ██ ▓█████ 
 ▓██▒     ██  ▓██▒▒ ▒ ▒ ▄▀░   ▓█   ▀    ▒██    ▒ ▒████▄     ██ ▀█   █  ██▒ ▀█▒ ██  ▓██▒▓█   ▀ 
 ▒██░    ▓██  ▒██░░ ▒ ▄▀▒░    ▒███      ░ ▓██▄   ▒██  ▀█▄  ▓██  ▀█ ██▒▒██░▄▄▄░▓██  ▒██░▒███   
@@ -22,7 +21,9 @@ def menu():
   ░ ░    ░░░ ░ ░ ░ ░ ░ ░ ░      ░      ░  ░  ░    ░   ▒      ░   ░ ░ ░ ░   ░  ░░░ ░ ░    ░   
     ░  ░   ░       ░ ░          ░  ░         ░        ░  ░         ░       ░    ░        ░  ░
                  ░                                                                           
-''')
+''' + Style.RESET_ALL
+    largura = 30
+    print(logo.center(largura))
     
     print(r"""                              ||||||||{ 1. Jogar }||||||||""")
     print(r"""                              ||||||||{ 2. Sair  }||||||||""")
