@@ -1,6 +1,6 @@
 # Luz & Sangue
 
-Este é um jogo de aventura em texto desenvolvido em Python. O jogo permite que os jogadores explorem um mundo interativo, enfrentem desafios, resolvam enigmas e interajam com personagens não-jogáveis (NPCs). As escolhas feitas pelo jogador influenciam o desenrolar da história e podem levar a diferentes finais.
+Este é um jogo de aventura em texto desenvolvido em Python. O jogo permite que os jogadores explorem um mundo interativo, enfrentem desafios, resolvam enigmas e interajam com personagens não-jogáveis (NPCs). As escolhas feitas pelo jogador influenciam o desenrolar da história e podem levar a diferentes finais. Neste jogo você controla Kael, o Vigia da Brumia, que tem o objetivo de recuperar e proteger a Espada da Luz. Com base nas suas escolhas, você pode explorar diferentes caminhos que podem te levar a diferentes finais. Tudo depende das suas decisões, você permanecerá na Luz ou sucumbirá à Escuridão?
 
 ## Estrutura do Projeto
 
@@ -27,7 +27,9 @@ text-adventure-game
 1. Clone o repositório ou baixe os arquivos do projeto.
 2. Instale as dependências necessárias usando o comando:
    ```
-   pip install -r requirements.txt
+   pip install colorama
+   pip install numpy==1.21.6
+   pip install texttable==1.6.7
    ```
 3. Execute o jogo com o seguinte comando:
    ```
