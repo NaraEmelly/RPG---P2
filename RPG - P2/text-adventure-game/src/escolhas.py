@@ -414,7 +414,7 @@ def cena_4():
     escolha = input("\n>> ").strip()
 
     if escolha == "1":
-        item_escolhido = "pedaço do enigma"
+        item_escolhido += "pedaço do enigma"
         print("Ele abre a porta da esquerda e se depara com um bau, ele abre e encontra um pedaço de papel com uma mensagem escrita:")
         print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: O que é isso? Parece uma mensagem..." + Style.RESET_ALL)
         print(Style.BRIGHT + Fore.YELLOW + "\n|||Mensagem||| " \
@@ -854,6 +854,143 @@ def cena_5():
     input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
     os.system('cls' if os.name == 'nt' else 'clear')
 
-cena_5()
 def escolhas_5():
     global item_escolhido
+    print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "Avançando pela floresta, você encontra criaturas estranhas e perigosas." + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""
+                                                 ░                
+                                            ░░░ ░░░░░          
+                                       ░░░░░░░░░░░░░░░░░░           
+                                     ░░░░░░░░░░░░░░░░░▒░░░░░░      
+                                   ░░░░░░░░░░░░░░░░░▒░░░░░░░░░░    
+                                  ░░░▒░░▒▓▓▓██████▓▒▒░░░░░░░░░░░    
+                               ░░░░░░▒▓██████████████▓▒░░░░░░░░░░░ 
+                               ░░░░▒▓██████████████████▓░░░░░░░░░░ 
+                              ░░░▒▒▓███████████████████▓▓▒░░░░░░░░░░░ 
+                              ░░▒▒▓█████████▓███████████▓▒░░░░░░░░░░    
+                             ░░▒░▒▓▓████▓▓▓█▓▓███▓█▓▓▓█▓▓▒░░░░░░░░░░     
+                             ░░▒░▓▒▒▒▒▓█████▓▓▒░░▒▒▒▒▓▓▓▓▒▒░░░░░░░░░ 
+              ░░░░▒▒░░       ░░▒░▒▒▒▓▓▒▒▒▓██▓▒▒▒▒▒▓▓██▓▓▓▓▒░░░░░░░░░   
+             ░░▓█████░       ░░▒▒▒▒▒▓▒░▒▓▓███▓▒▒▓▒▒▒▓▓██▓▓▓▒░░░░░░░░  
+            ░░████▓▓█▓░       ░▒▓▓▒▒▒▒▓▓▓███▓▓██▓▓▓█▓████▓▓▒▒░▒▓░░░░░
+           ░▓▓▓▒░░░▒▓▓█░       ░▒▓▓██▓▓▒▒▒▒▒▒██▓▓█████████▓▒▒░░░▒░░░░░
+         ░▒▓▓░░    ░▒▒▓█▒░    ░░▓████▒▒░░░▒░░▒▒▒█▓▓▓████▓█▓▒▓▒▒▒░░░░░░░░░
+        ░▓█▓░       ░░▒▓█▓░   ░░█▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓████▓▓▓▓▒▒▒▒▒▓░░░░░   ░░░░░
+      ░▓▓▓▓░          ░▒▓██▒░░░░██▓▓▓▓▓▓▓▓▓▒▓▓▓████▓▒▓█▓▒▓▒▒▒▒░░░░░░░░░░▒▒▒▓█▓▒░░░
+      ▒▒▓▓▒░  ░        ░▒▓██████▓▓▒▓▓▓██▓▓▓▓█████▒▓▓█▓██▓▒▒▓▓▓▒░░░░░░░░▒▒▓▓▓█▓▓▒░░░░░
+     ░ ░░░░░░░░         ░░▒▓█████▓▓▓▓██▓░▒▒▒▓▓▒▓██▓▒▓▓██▓▓▓▓▒░▒░░░░▒░░░▒▒▒░▒▒▓▓▓▒░ ░░░░         
+         ░▓██░░           ░▒████▓▓█▒▒▓▓░░░▒░░▒▒▒▓██▓▓▒▓▓▓▓▓▓▒░░░░░░░░▒▓▓▒▒░░▒▒▒▓▓▒░             
+       ░░▒▓▓▓▓▒░░          ░▒▓▓█▓▒▒▒░▒░░░░▒░▒░▓▓█▓▒▒▓▓▓▓▓▓▓▓▓▓░  ░ ░▒▓▒▒░░░ ░░▒▒▓▓▓░            
+       ░▒▒▒▒▒▒▒▓░░░░       ░▒▒▒▓▓▒▒▒▒▒▒▓▓░▒▒▒▒▒▓▓░▓▒░▓▓░▒▓▓█▓▓▓░░░░▓▓▓▒░░ ░░░░░░▒▓▓▓░░          
+      ░░▒▒▒░░░░░▒▒▒░░░░░░░   ░░░░░▒▒▒▒▓█▓▓▓▓▓▓▒██░▓▓▓▒░▒▒▒▓▓▓▓▓▒▓▓▒▒▓▒▒░░░░░░░░░░░▒▓▓░░        
+      ░▒▒░░    ░░░▒▒▒▒▒▒▒░░░░░░░░▒▓▒▓░▓▒▒▓██▓▒▓▓▓▓▒▒░▒▒▒▓▓▒▒█▓▓▓▒▒▒▓▒▒░░░░░░░▒▒▒▒░░░▓▓▒░        
+░    ░░▒▒░     ░░░░▒▒▒▒▒▒▓▓█▓▒▒░░▒▒░▒░░░▓█▓▒▒░▒▒▒░▒▒░▒▒░▓███▓▒▓▓▓▓▓▒░░░░░░░░▓▓█▓▓▒░░▒▓▓▒░░   
+░   ░░▒▒▒░░░░░░░  ░░░░▒▒▒▒▒▒▒▒▒░░░░░░░░░▓▓░░░░░▒░▒▓▒▒▒▒░▒▒▓▓▓▓▒▒▓▒▒▒▒░░░ ░░▓▓█▓▓▒▒▒░░░▒▓▒░░     
+    ░░▒▒░   ░░░░░    ░░░▒░░░▒▒▒░░░░░░░░░▒░░░░░░▒░░▒▒▒▒▒▒░▒▒▒░▒▓▒▒▒▒▒░░  ░▒▓▓▓▓▓▒▒▒░  ░░▒▒▓▒░░░  
+░  ░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░▒░░▒▒░░░░░░▒░▒░▓▒▒▒▒░░▒▒▒▒▒▒▒░▒░░░▒▒▒▒▒▒░▒▒▒░░   ░░▒▒█▓░░  
+░░░▒▒▒░░░░░░░░░░░░▒▒▒▒░░░░░░░░░░░░░░░▒░░░▒░░░░░░░▒▒░▒░░▒▓░░░▒▒▒▒▒░░░░▒▒▒▒▒▒░░░▒▒▒░    ░░░▒▒▒░░░░
+░░▓█▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓░░░░░░░░░░░░▒░░░░░▒░░░░░▒░░░░░▒▒▒▒░░  ░▒▒▒░       ░░▒▓█▓▒░
+░▓██▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▒░░░▒▒░▒▒░░░▒▒▒░░░▒░░▒▒░░▒▒▓▒▒▒▒░░    ░▒▒░░       ░▒▒▒▓▒▒░
+░▓▓▓▒░░ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▒▒░░▒▒▒░░░▒▓▒▒▒▒░░░░▒▒▒░░▒▒▓██▓░    ░▒▒░       ░░░▒▒▒░░░
+░░▒█▓░  ░░░ ░░░░░░░░░░░░░░░░░░░░░░░░░▓▒▒▒▓▒▒▒░▒░░░▒▓▓▓▓▒░░▒░░░░░▒▒▒▒▒▒▒▒░░ ░▒▒▒░░       ░▒▒▒░░  
+░░▒▒▒▒░     ░░░░░░░░░░░░░░░░░░░░░░░░░▓███▓▓▓▓░▒░░▒▒▓█▒░░░▒░▒░  ░░ ░░░░░░▒░▒▓▓▓▒░       ░▒▒▒▒░   
+░░░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓█▓▓▓░░▒▒▒▒▒▒█▒▒▓▓▓▒▒░         ░░░▒▒▒▒░░░       ░░░░░░    
+░░░░▒▒▒░░░  ░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒░ ░░░   ░░░░▒▒▒▒▒▒░  ░░░░░░░░░░░░     
+░░░░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓░▒▒▒▒▒░▒▒▒▒▒▒▒▓▓▒▒▒▒░░ ░░░░░░░▒▒▒▒░░▒▒▒█▓▒░░░░░░░░░░░░░    
+░░░░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒░░░ ░ ░░▒▒░░░░░░░░▒▓▓▓▓░░ ░░░░░░░     
+░░░░░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░▓▓▒▒▒▒▒▒▒▒▒▒▓░░░░░░▒▒░░░░░░░░  ░▒▒░░░░ ░░░░░░░       
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░▒▒▓█▓▓▒▓▓█▒▓▓▒ ░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░░░░░░    
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▓▒▒▒▓█▓░ ░░░░▒░  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░▒▓▒▒▒▓▓▓█▒▒░░░░▒░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+""" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.MAGENTA + "\nElas são hostis e bem estranhas, é uma junção de aranha com humano?" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.MAGENTA + "\nEssas criaturas da escuridão não parecem ser forte" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.WHITE+ "\nKael: Que criaturas estranhas, parece que estou em um pesadelo" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.RED + "\nUma delas te atacou, o que voce irá fazer?" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.CYAN + "\n1. Lutar." + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.CYAN + "2. Fugir." + Style.RESET_ALL)
+
+    escolha = input("\n>> ").strip()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    if escolha == "1":
+        if item_escolhido == "chicote":
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nComo você imaginou, essas criaturas realmente não são fortes!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nVocê usou seu chicote para rebater o golpe da criatura!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.GREEN + "\nVocê derrotou a criatura estranha com um unico golpe!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.YELLOW + "\nAs outras criaturas escaparam com medo" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Caramba, essas criaturas são bem fracas haha" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nVocê avança pela floresta, tentando encontrar uma saída." + Style.RESET_ALL)
+            
+        elif item_escolhido == "pergaminho":
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nComo você imaginou, essas criaturas realmente não são fortes!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nCom o seu pergaminho, você consegue desviar dos golpes com facilidade." + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nContudo, seu pergaminho começa a brilhar e matou a criatura que estava te atacando,",
+                "invocando runas no chão e o reduzindo a pó!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.YELLOW + "\nVocê derrotou a criatura estranha!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.YELLOW + "\nAs outras criaturas escaparam com medo" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Caramba, eu não sabia que isso era tão poderoso haha" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nVocê avança pela floresta, tentando encontrar uma saída." + Style.RESET_ALL)
+
+        elif item_escolhido == "nada":
+            print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nComo você imaginou, essas criaturas realmente não são fortes!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.RED + "\nPorem, você não tem uma arma para se defender." + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.RED + "\nAs criaturas se juntaram e atacaram coletivamente." + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Então... então é assim... assim que irei morrer?" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.RED + "\nKael agonizando de dor, foi brutalmente devorado pelas criaturas" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.RED + "\nVocê foi morto pelas criaturas estranhas!" + Style.RESET_ALL)
+            input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print(Style.BRIGHT + Fore.RED + r"""                                                                                                    
+                                                                                                                                                            
+                                                                                ░░████████░ ░███████▓░ ▓█████████████▒░ ░████████▓                         
+                                                                                ░███▓░░░░░░ ████░▒███▓ ▓███░░████░▒███▒ ████░░░░░░                         
+                                                                                ░███▓▒████░ █████████▓ ▓███  ████ ▒███▒ ███████░                           
+                                                                                ░███▓░▒███░ ████░▒███▓ ▓███  ████ ▒███▒ ████░░░                            
+                                                                                ░█████████░ ████░░███▓ ▓███  ████ ▒███▒ █████████▓                         
+                                                                                ░        ░ ░  ░  ░  ░            ░   ░ ░        ░                         
+                                                                                 ░███████▒░ ████░░███▓  ▓████████░▒████████░░                            
+                                                                                ░███▓ ▒███▒ ████░░███▓ ▒███░░░░░░ ▒███▒ ▓███                             
+                                                                                ░███▓ ▒███▒ ████░░███▓ ▒██████    ▒████████░                             
+                                                                                ░███▓ ▒███▒ ████░░███▓ ▒███░  ░   ▒███▒░▓███░                            
+                                                                                ░█████████▒ █████████▓ ▒█████████░▒███▒ ▓███                             
+                                                                                    ░░░░░░░░  ░░░░░░░░░   ░░░░░░░░░  ░░░  ░░░░░                            
+                                                                                                                                                            """ + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.RED + r"""
+                                                                                  ◤———————————————————————————————————————◥ 
+                                                                                  |     1. RETORNAR NO ULTIMO CHECKPOINT?  |
+                                                                                  ◣———————————————————————————————————————◢""" + Style.RESET_ALL )
+            print(Style.BRIGHT + Fore.RED + r"""
+                                                                                            ◤————————————————◥ 
+                                                                                            |     2. SAIR     |
+                                                                                            ◣————————————————◢""" + Style.RESET_ALL )
+            print("\n>>  ", end="")
+            retornar = input()
+    
+    
+
+            if retornar == "1":
+                os.system('cls' if os.name == 'nt' else 'clear')
+                return cena_5()
+            else:
+                os.system('cls' if os.name == 'nt' else 'clear')    
+            exit()
+
+    elif escolha == "2":
+        print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nVocê decidiu fugir, mas as criaturas permanecem te perseguindo!" + Style.RESET_ALL)
+        print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nPor sorte, você conseguiu despistar elas!" + Style.RESET_ALL)
+        print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nKael: Ufa, essas criaturas são bem rápidas!" + Style.RESET_ALL)
+        print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nVocê avança pela floresta, tentando encontrar uma saída." + Style.RESET_ALL)
+        
+    else:
+        print(Style.BRIGHT + Fore.RED + "\nEscolha inválida, tente novamente." + Style.RESET_ALL)
+        return escolhas_5()  
+    
+    time.sleep(2)
+    input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+cena_5()
+escolhas_5()
