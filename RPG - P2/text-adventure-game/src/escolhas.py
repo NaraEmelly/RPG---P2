@@ -8,7 +8,8 @@ from colorama import Fore, Back, Style
 
 
 def cena_1():
-    print(Style.BRIGHT + Fore.MAGENTA +"||||| Cena 1: O Despertar |||||"+ Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "||| Prologo: O Antigo Templo |||" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.MAGENTA +"\n||||| Cena 1: O Despertar |||||"+ Style.RESET_ALL)
     narrador = [Style.BRIGHT + Fore.WHITE +
         "\nKael acorda caído em um ambiente escuro e sujo. Aparentemente parece ser um templo em ruínas.",
         "Em sua frente você vê um pergaminho no chão, e ao lado dele um chicote de couro com uma escrita antiga.",
@@ -248,11 +249,11 @@ def cena_3(): # tambem é a escolha 3
 def escolhas_3():
     global item_escolhido
     
-    print("Kael precisa encontrar respostas ou pistas para sair desse templo, ele pode a qualquer momento desabar ou algo pior!... ")
+    print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "Kael precisa encontrar respostas ou pistas para sair desse templo, ele pode a qualquer momento desabar ou algo pior!... ")
 
     print("\nEscolha o que Kael pode fazer:")
     print("\n1. Analisar as escrituras nas paredes ")
-    print("2. Voltar e explorar o templo atrás de pistas")
+    print("2. Voltar e explorar o templo atrás de pistas" + Style.RESET_ALL)
 
     escolha = input("\n>> ").strip()
 
@@ -262,7 +263,7 @@ def escolhas_3():
         print("\nKael: HuM Parece que uma estátua esconde alguma coisa, é difícil decifrar..")
         print("\n( KAEL OLHA PARA TRÁS E SENTE COMO SE ESTIVESSE SENDO OBSERVADO )")
         print("\n( ELE OLHA PARA CIMA )")
-        print(r"""                                                                                                    
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""                                                                                                    
  ▒▒▒▒▒░▓▓▓░  ░░░   ▒▓█▓▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░   ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒██▒░   ░░░░░░▒▒▒▒▒▒▒▒▒ 
  ▒▒▒▒▒░▒▒▒░▒▒░  ░░▒▒░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░ ▓████░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░░░▓▓▒░░ ░░▒▒▒▒▒░▒▒░▒▒ 
  ▒▒░▒▒▒░░░▒▓███████▓▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▓██▓▓▓▓▓▓░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░▒▓███████▒░▒░▒▒▒▒░▒▒ 
@@ -317,14 +318,14 @@ def escolhas_3():
  ▒▒▓▒▒▒▒▒▒▒▒▒▒▒▓▓▓▒▒▒▒▓░▒▒▒▒░░░░░▒▓▒░░░▒██▓▒░▒▒░▒▓░░▒▒░▒▒██▓▒░░▒▒▒▒░░░▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒░▒ 
  ▒░▒▒░▒░░▒░▒▒▓▓▒▒▒▒▒▓▒▒░▒▒░▒▒██▓█▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▓▓▒▒▒▓▒▒▒▒▒▒▒▓▓▒▓▓▓▓▓▓▒▒░▒▒▓▓▓▒▒▓▒▓▓▓▒▓▒▒▒▒▒▒▒▒▒▒░▒ 
                                                                                                     """)
-        print("\nKael: AAAHR~ Que susto! Não tinha notado essa estátua enorme. Uau parece ter mais de 10m...")
+        print("\nKael: AAAHR~ Que susto! Não tinha notado essa estátua enorme. Uau parece ter mais de 10m..." + Style.RESET_ALL)
 
     elif escolha == "2":
         print("~~ VOLTANDO PELO CORREDOR ~~")
         print("\nVocê explora o templo e percebe uma estatua meio medonha de mais de 10m de altura.",
         "De alguma forma te dar calafrios.")
 
-        print(r"""                                                                                                    
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""                                                                                                    
  ▒▒▒▒▒░▓▓▓░  ░░░   ▒▓█▓▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░   ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒██▒░   ░░░░░░▒▒▒▒▒▒▒▒▒ 
  ▒▒▒▒▒░▒▒▒░▒▒░  ░░▒▒░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░ ▓████░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░░░▓▓▒░░ ░░▒▒▒▒▒░▒▒░▒▒ 
  ▒▒░▒▒▒░░░▒▓███████▓▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▓██▓▓▓▓▓▓░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░▒▓███████▒░▒░▒▒▒▒░▒▒ 
@@ -380,15 +381,15 @@ def escolhas_3():
  ▒░▒▒░▒░░▒░▒▒▓▓▒▒▒▒▒▓▒▒░▒▒░▒▒██▓█▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▓▓▒▒▒▓▒▒▒▒▒▒▒▓▓▒▓▓▓▓▓▓▒▒░▒▒▓▓▓▒▒▓▒▓▓▓▒▓▒▒▒▒▒▒▒▒▒▒░▒ 
                                                                                                     """)
 
-        print("\nKael: Aah SENTIR UM CALAFRIO O QUE SERÁ ESSA ESTÁTUA? ME SINTO OBSERVADO.")
+        print("\nKael: Aah SENTIR UM CALAFRIO O QUE SERÁ ESSA ESTÁTUA? ME SINTO OBSERVADO." + Style.RESET_ALL)
 
 
     else:
-        print("\nEscolha inválida. Tente novamente.")
+        print(Style.BRIGHT + Fore.RED + "\nEscolha inválida. Tente novamente." + Style.RESET_ALL)
         return escolhas_3()
 
-    time.sleep(0.001)
-    input("\nPRESSIONE ENTER PARA CONTINUAR...")
+    time.sleep(0.10)
+    input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
@@ -398,10 +399,10 @@ escolhas_3()
 def cena_4():
     global item_escolhido
 
-    print ("||||| CENA 4: SAIA SE PUDER |||||")
+    print (Style.BRIGHT + Fore.MAGENTA + "||||| CENA 4: SAIA SE PUDER |||||" + Style.RESET_ALL)
 
     print("\nUm enorme barulho ecoa pelo templo, BRUMMMM!")
-    print("\nKael: O que foi isso? 'ele olha para trás'")
+    print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: O que foi isso? 'ele olha para trás'" + Style.RESET_ALL)
     #arte de três portas
     print("\nEle vê três portas, uma a esquerda, outra a direita e uma no meio. Escolha uma porta para sair do templo.")
     print("\n1. A porta da esquerda")
@@ -415,18 +416,18 @@ def cena_4():
     if escolha == "1":
         item_escolhido = "pedaço do enigma"
         print("Ele abre a porta da esquerda e se depara com um bau, ele abre e encontra um pedaço de papel com uma mensagem escrita:")
-        print("\nKael: O que é isso? Parece uma mensagem...")
-        print("\n|||Mensagem||| " \
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: O que é isso? Parece uma mensagem..." + Style.RESET_ALL)
+        print(Style.BRIGHT + Fore.YELLOW + "\n|||Mensagem||| " \
         "\n'Em um templo de misterios antigos, " \
         "Uma estatua o faz refletir. " \
         "Não é um Deus, nem um heroi, " \
-        "Mas a resposta está diante de você.'")
-        print("\nKael: O que isso significa?")
+        "Mas a resposta está diante de você.'" + Style.RESET_ALL)
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: O que isso significa?" + Style.RESET_ALL)
         print("\n[ Kael obteve pedaço do enigma ]")
 
     elif escolha == "2":
         print("Kael abre a porta do meio e se depara com uma pessoa sentada em um trono, com os olhos que parecem estar te observando.")
-        print(r"""
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""
 ░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▒▒▒▒▓███▒▒▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░▒░░░░░░░░░
 ░░░░░░░░░▒░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▓█▒▒▒▒▓▒█▓▒▒▒▒▒█▓▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░▒░▒░░░░░░░░░
 ░░░░░░░░░▒▒▒░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▒▒▓█▒██▓▓██▒██▒██▒▒▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▒░░░░░░░░
@@ -494,22 +495,22 @@ def cena_4():
 ▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓█████░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▒██████░░░░░░░░░░░░░░░░░░░░▒░░░░▒▒▒
 """)
         print("\nKael: Quem é você? 'ao se aproximar, ele percebe que não tem nenhum corpo, apenas uma sombra.'")
-        print("\nKael: O que você quer de mim? 'a sombra não responde, apenas observa.'")
+        print("\nKael: O que você quer de mim? 'a sombra não responde, apenas observa.'" + Style.RESET_ALL)
         print("\nEntão ele sai da sala e fecha a porta.")
         return cena_4()
          
     
     elif escolha == "3":
         print("Ele abre a porta da direita e se depara com uma mensagem escrita na parede:")
-        print("\n'A ESTATUA É A RESPOSTA'")# adicionar art ascii text
+        print(Style.BRIGHT + Fore.YELLOW + "\n'A ESTATUA É A RESPOSTA'" + Style.RESET_ALL)# adicionar art ascii text
     
 
     else:
-        print("\nEscolha inválida. Tente novamente.")
-        return 
+        print(Style.BRIGHT + Fore.RED + "\nEscolha inválida. Tente novamente." + Style.RESET_ALL)
+        return cena_4()
 
     time.sleep(0.001)
-    input("\nPRESSIONE ENTER PARA CONTINUAR...")
+    input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def escolhas_4():
@@ -525,29 +526,29 @@ def escolhas_4():
 
     if escolha == "1":
         if item_escolhido == "pedaço do enigma":
-            print("\nKael: O que isso significa? 'ele tenta decifrar o enigma'")
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX +"\nKael: O que isso significa? 'ele tenta decifrar o enigma'" + Style.RESET_ALL)
             print("\nEle percebe que a resposta está na própria estátua.")
-            print("\nKael: A ESTATUA É A RESPOSTA!")
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: A ESTATUA É A RESPOSTA!" + Style.RESET_ALL)
 
         elif item_escolhido == "nada":
-            print("\nKael: Não tenho nada para decifrar o enigma.")
-            print("\nKael: Talvez eu deva voltar para uma das portas.")
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Não tenho nada para decifrar o enigma." + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.YELLOW + "\nKael: Talvez eu deva voltar para uma das portas." + Style.RESET_ALL)
             return cena_4()
         
         elif item_escolhido == "chicote":
-            print("\nKael: Não tenho nada para decifrar o enigma.")
-            print("\nKael: Talvez eu deva voltar para uma das portas.")
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Não tenho nada para decifrar o enigma." + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.YELLOW + "\nKael: Talvez eu deva voltar para uma das portas." + Style.RESET_ALL)
             return cena_4()
 
         else:
-            print("\nResposta inválida. Tente novamente.")
-            return 
+            print(Style.BRIGHT + Fore.RED + "\nResposta inválida. Tente novamente." + Style.RESET_ALL)
+            return escolhas_4()
     elif escolha == "2":
         if item_escolhido == "pergaminho":
             print("\nEle analisa a estátua e do nada o pergaminho direciona ele para um certo ponto da estátua.")
-            print("\nKael: Será que é ali a saída?")
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Será que é ali a saída?" + Style.RESET_ALL)
             print("\nEle tenta empurrar o ponto da estátua e ela se move, revelando uma passagem secreta.")
-            print(r"""
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX  + r"""
 ███████████▓█▒▓▓█████████████████████████████████████▓▓██████████████▓███████████████████████▓▓▓▓▓▓▓
 ███████████▓▒█▓██▓██▓█████████████████████████▓▓████▓▓▓▓████████████████▓▓███████████████████▓▓█▓▓▓▓
 ██████████▓▓▓████▓▓████████████████████████████▓████▓▓▓▓▓█████████████████▓██████████████████▓▓▓▓▓▓▓
@@ -619,11 +620,11 @@ def escolhas_4():
 ██████████████▓▓▓▓███████████████▒░▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▓███▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓
 █████████████████████████████████▒█▓▓▓▓▓▒▒▒▒▒▓▓██▓▓▓███▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓▓▓▓▓▓▓
 """)
-            print("\nKael: Finalmente uma saída! O que será que tem lá fora?")
+            print("\nKael: Finalmente uma saída! O que será que tem lá fora?" + Style.RESET_ALL)
         elif item_escolhido == "nada":
-            print("\nKael: È estranho, não faz sentido...")
-            print("\n(KAEL SE APOIA EM UMA PARTE DA ESTÁTUA E REVELA UMA PASSAGEM!)")
-            print(r"""
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: È estranho, não faz sentido..." + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.YELLOW + "\n(KAEL SE APOIA EM UMA PARTE DA ESTÁTUA E REVELA UMA PASSAGEM!)" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""
 ███████████▓█▒▓▓█████████████████████████████████████▓▓██████████████▓███████████████████████▓▓▓▓▓▓▓
 ███████████▓▒█▓██▓██▓█████████████████████████▓▓████▓▓▓▓████████████████▓▓███████████████████▓▓█▓▓▓▓
 ██████████▓▓▓████▓▓████████████████████████████▓████▓▓▓▓▓█████████████████▓██████████████████▓▓▓▓▓▓▓
@@ -695,18 +696,18 @@ def escolhas_4():
 ██████████████▓▓▓▓███████████████▒░▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▓███▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓
 █████████████████████████████████▒█▓▓▓▓▓▒▒▒▒▒▓▓██▓▓▓███▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓▓▓▓▓▓▓
 """)
-            print("\nKael: Eu não sei o que eu fiz, mas parece que a estátua me ajudou.")
+            print("\nKael: Eu não sei o que eu fiz, mas parece que a estátua me ajudou." + Style.RESET_ALL)
         else:
-            print("\nResposta inválida. Tente novamente.")
+            print(Style.BRIGHT + Fore.RED + "\nResposta inválida. Tente novamente." + Style.RESET_ALL)
             return
     elif escolha == "3":
         print("\n'Kael grita para a estátua'")
-        print("\nKael: SE VOCÊ É A RESPOSTA, ME AJUDE A SAIR DAQUI!")
-        print("\n(A estátua se move e revela uma passagem secreta.)")
+        print(Style.BRIGHT + Fore.RED + "\nKael: SE VOCÊ É A RESPOSTA, ME AJUDE A SAIR DAQUI!" + Style.RESET_ALL)
+        print(Style.BRIGHT + Fore.YELLOW + "\n(A estátua se move e revela uma passagem secreta.)" + Style.RESET_ALL)
         # Adicionar art de passagem secreta
-        print("\nKael: Eu duvidei de você, mas você realmente me ajudou.")
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Eu duvidei de você, mas você realmente me ajudou." + Style.RESET_ALL)
         print("\n(a estátua sorriu para ele)")
-        print(r"""
+        print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""
 ▓▓▓▓▓██▓█████████████▓▓▓▓▒▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▒▓▒▓▓▓▓▓▓▓█▓███████████▓▒▒▒▒▒▒▒
 ▓▓▓██▓▓██████▓███▓▓▓▒▒▒▒▓▒▒▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███████▓▓▓▓▓▓▓▓▓▓▓▓█▓▓████████▒▒▒▒▒▒▒▒
 ▒▓██▓█████████▓▓▓▓▓▓▒▒▓▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████▓▓▓▓▓▒▒▒▓▓▓▓▓█████████▒▒▒▒▒▒▒▒
@@ -775,17 +776,84 @@ def escolhas_4():
 ██████▓▓▓▓▒███▓▓▓███▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▓███▓█▓▒▒▒▓▓███▓▓▒████████
 ▓█████▓▓▒▒▓▓██▓▒▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓█▓▓▓▓▓▓█▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓█▓▓▓▓▓▓████▓▓▓▓████▓██
 ▓█████▓▒▓▒▓█▓▓▓▒▓███▓▓▓█▓▓▓▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓█▓▓▒▓▓███▓▓▓▓▓▓████▓▓▓▒▓███▓▒▓
-""")
+""" + Style.RESET_ALL)
     else:
-        print("\nEscolha inválida. Tente novamente.")
+        print(Style.BRIGHT + Fore.RED + "\nEscolha inválida. Tente novamente." + Style.RESET_ALL)
          
     
-    time.sleep(0.001)
-    input("\nPRESSIONE ENTER PARA CONTINUAR...")
+    time.sleep(0.10)
+    input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
     os.system('cls' if os.name == 'nt' else 'clear')
 cena_4()
 escolhas_4()
 # ADICIONAR O CAMINHO DAS ESCOLHAS
 
 def cena_5():
-    print("")
+    global item_escolhido
+
+    print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "||| Ato I: A Floresta das Cinzas |||" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.MAGENTA + "\n||||| Cena 5: os Misterios da Floresta |||||" + Style.RESET_ALL)
+    narrador2 = [Style.BRIGHT + Fore.WHITE + 
+        "\nApós sair das ruinas do Templo, você se encontra em uma floresta densa e escura",
+        "Você sente que algo está te observando, mas não consegue ver nada." + Style.RESET_ALL,
+    ]
+    for linha in narrador2:
+        for caractere in linha:
+            sys.stdout.write(caractere)
+            sys.stdout.flush()
+            time.sleep(0.03)
+        print()
+        time.sleep(0.03)
+    print(Style.BRIGHT + Fore.LIGHTWHITE_EX + r"""
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░░░░░░░░░░▒▒░░░░░░░░░░░░░▒▒░░░░░░░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░▒░▒▒▒░░░░░░░░░░░░░▒░░░░░░░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░▒▒▒▒░░░░░░░░▒▒▒░░░░░░░░░░░▒░░▒▒░░░░░░░░░░░░░▒▒▒▒░░░░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░▒▒▒▒▒░░░░░▒▒▒▒▒▒▒▒▒░░░░░░░░▒▓▓▒▒░░░░░▒▒░░░░░▒▒▒▒▒▒▒░░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░▒▒▒▒░░░░░▒▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒▒▒░░░░░▒▒▒░░░░░▒▒▒▒▒▒▒░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░░░▒░░░░░░░░░▒░░░░░░▒▒▒▒▒▒▒▒░░░▒░░▒▒▒▒░▒▒▒░░░░░▒▒░░░░░░▒▒▒▒▒▒░░░░░░░░░░
+    ░░▒░░░░▒░░░░░░░░░░░▒░▒▒▒▒▒░░░▒▒▒▒▒░░░▒▒▒░░░░░░▒▒▒▒▒▒▒▒▒░░░▒▒▒▒▒▒▒▒▒▓▒░░░░░░░░░░░░░░░▒▒▒▒▒░░░░░░░░░
+    ▒▒▒░░░░▒░░░░░░░░░░░▒░▒▒▒▒▒▒▒▒▒▒▒▒▒░░░▒▒▒░░░░░▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒▓░░░░░░░░░░░░░░░░▒▒▒▓░░░░░░░░░
+    ▒▒▒░░░▒▒░░░▒░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓░░░▒▒▒▒░░░▒▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█░░░░░░▒░░░░░░░░░▒▒▒▒░▒▒░░░░░░
+    ▒▒▒░░░▒▒▒▒░▒░░▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█░░░▒▒▒▒░░░▒▒▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒░░░░▒▒░░░░░░░░░░▒▒▓░▒▒░░░░░░
+    ▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█░░░▒▒▒▒░░▒▒▒▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓░░░░░░▒░░░░░░░░▒▒▒▓░░▒░░░░░░
+    ▒▒▒░░░▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓░░░▒▒▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█░░░░▒▒▒░░░░░▒░░▒▒▒█░░▒░░▒▒░░
+    ▒▒▒░░░▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▓░░░▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒█░░░░▒▒▒░░░░░▒▒░▒▒▒▓▒░▒░░▒▒▒░
+    ▒▒▒░▒░▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▓▒▒▒▒▒▒▒▒▒▓▒░░░▒▒▒▒▒░▒▒▒▒▒▓▓▓▒▒▒▒▒░▒▒▓▒▓▓▓▒▒▒▒▒▓░░░░▒▒▒░░▒░▒▒▒▒▒▒▒▒▒░░▒░▒▒▒░
+    ▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▓▒▒▒▒▒▒▒▒▒▓█░░░▓▓▓▒▒░▒▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▓░░░░▒▒▒▒░▒░░▒▒▒▒▒▒▒▒░░▒░░▒▒░
+    ▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▓▓▓▒▒▒▒▒▒▒▒▓█░░░▓▓▓▓▒░▒▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▓▓░░░░▒▒▒▒░▒▒░▒▒▒▒▒▒▒▓░░▒░░▒▒░
+    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▓▓▓▓▒▒▒▒▒▒▒▓█░░░▓▓▓▓▓░▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▓▓▓▓▓▒▒▓▒░░░▒▓▓▓▒░░▒░▒▒▒▒▒▒▒▓▒░░░░▒▒░
+    ▒▒▒▒▒▒▓▓▓▒▒▒▒▒▒▒▒░▒▒▒▓▓▓▓▓▒▓▒▓▓▓▓█░░░▓▓▓▓▒░▒▓▒▓▓▓▓▓▓▓▒▒▒▒▒▒▓▒▓▓▓▓▓▓▓█▒░░░▒▓▓▓▓▒░▒░▒▒▒▒▒▒▒▓█░░░░▒▒░
+    ▓▓▒▒▒▒▓▓▓▒▓▓▓▒▓▓▒░▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓█░░░▒▓▓▓▒▒▒▒▓▓▓▓▓▓▓▓▒▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▒░░░▒▓▓▓▒▒░▒░▒▒▒▒▒▒▒▒█░░▒░▒▒▒
+    ▓▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▒░▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓█░░░▓▓██▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓▒▓█▓▓▓▓▓▓░░░░▓▓▓▓▓░▒▒▒▒▒▒▒▒▒▒█░░▒░░▒▒
+    ▓▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▒░▓▒▓▓█▓▓▓▓▓▓▓▓▓▓█░░░▓███▒▒▓▓▓▓▓████▓▓▓▓▒▒▒▓▓▒▓▓▓▓▓▓█▓░░░░▓▓▓▓▓░▒▒▒▒▒▒▒▓▓▒█░░▒░░▒▒
+    ▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▒░▓▓▓▓█▓▓▓▓▓▓▓▓█▓█░░░▓███▒▒▓▓▓▓▓████▓▓▓▓▒▒▓▓█▒▓▓▓▓▓▓▓▓░░░░▓▓▓▓█░▒▒▒▓▒▒▒▓▓▓▓░▒▒░░▒▒
+    ▒▓▒▒▒▓██▓▓▓▓▓▓▓▓▒░▓▓▓████▓▓▓▓▓▓▓██░░░▓███▒▒▓▓▓▓▓███▓▓▓█▓▒▓▓██▒▓▓█▓▓▓▓█▒░░░░▓▓▓▓▒░▒▒▓▓▓▒▓▓▓▒░▒▒░░▒▒
+    ░░░░░░░▒▓▓▓██▓██▒░▓▓▓████▓▓▓▓▓▓▓▓█░░░▓███▒▒▓▓▓▓██████▓██▒▓▓▓█▒█▓█▓▓▓▓█▓░░░░▓▓▓▓▓░▒▒▓▓▓▒▓▓▒▒░▒▓▒░▒▒
+    ░░░░░▒▒██████▓██▒░▓▒▓█████▓▓▓██▓██▒░░▓███▒░▓█▓███████▓██▒▓▓▓█▒████▓▓▓█▓▒░░░▒▓▓▓█░▒░▒▓▓▒▓▓▓▒░░▓▒░▒▒
+    ░▒▒▒▒▓▓█████████▒░█▒▓██████▓██████▒░░░▓██▒▒▓█▓▓██████▓██▒▓▓██▒████▓█▓█▓▒░░░░▒▓▓▓░▒▒▓▓▓▒▓▓▓▓░░▓▒▒░▒
+    ░▒▒▒▒▒▓█████████▒▒█▓▓██████▓██████▓░░▒███▒▒▓█▓██████████▒▓███▒██████▓██▒░░░░░▓▓█▒▒▒▓▓▓▓▓▓▓▓░░▓▓▒░▒
+    ░░░░░░▒░▒▓▒▒▓███▒▒█▓▓██████▓██████▒░░▒███▒▒▓████████████▒▓███▒██████▓██▓▒░░░░░▓█▒▒▒▓▓▓▓▓▓▓▓▒░░▓▒░▒
+    ▒▒▒░░▒▓█▓███████▒▒█▓██████████████▒░░░███▒▒▓████████████▓▓███▒██████████▒░░░░░░██░▒▓▓▓▓▓█▓█▓░░▓▒▒▒
+    ▒▓▓▒░░▓▒▒▒██████▒▒████████████████▒░░░███▓▒▓████████████▓▓███▓██████████▒░░░░░░░█░▒▓█▓█▓████░░▓▓░░
+    ▓█▓▒▒▓██████████▓▒████████████████▒░░▒███▓▓██████████████▓███████████████▒░░░░░░▓▒▒▒███▓████▒░▒▓▒░
+    ▓▓▓▓▓███████████▓▓████████████████▒░░▒▓███▓██████████████████████████████▓░░░░░░░▒▒▒███▓████▒░▒▓▒░
+    ▓█▓▓▓████████████▓████████████████▒▒▒▒▓███████████████████████████████████▒░░░░░░░▒▓██████▓▓░░▒▓▒▒
+    ▓█▓▓▓████████████▓████████████████▒▒▒▒▒███████████████████████████████████▒░░░░░░░▒▒▓██████▓░░▒▓▒▒
+    █████████████████▓▓██████████████▓▓▒▒▒▒▒█████████████████████▓████████████▓▒░░░░░░░▒▒▒▒▒▒▒▒▓░░░▓▒▒
+    ▓▓▒▒▒▓███████████▓▓█████████████▓▒▒▒▒▒▒▒▒▒▓████████████████████████████▓▓▓▓▒░░░░░░░▓▓▒▓▓▒▒▒▒▓░░░▒▒
+    ░░▒▒▒▓▓▓██▓██████▓▒▓▓▓▓██▓▓████▓▓███▓▒▒▒▒▒▒▒▒▒▒▓▓▓████▓▓▓▓█▓▓▓▓▓▓▒▒▒▒▓▓▓▓▒▒░░░░░░░░░░▒▒▒▒▒▒░░░░░░░
+    ░░░░░░░▒▒▒▒▒░▒▓▓▓▒▒▒▒▒▓▓▓▓▓▓▓▓▓██▓▓▓█████▓▓▓▓▒▒▒▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓▓▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░░░
+    ░░░░▒▒▒░░▒▒░░░░▒▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██████▓▓▓▓▓▓▓▒▒▒▒▒▒▓▒░▒▒░░▒▒▒░░▒▒░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░
+    ░░░▒░▒▒▒▒░░░░░░▒▒░░░░░░░░░░░░░░░░░░▒▒▒▒▒▓▓▒▓▓▓▓▓▒▒▒▒▒▒▒▒░▒▒░░░░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒░▒▒▒░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+    """ + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nvocê avança pela floresta, tentando encontrar uma saída." + Style.RESET_ALL)
+
+    time.sleep(2)
+    input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+cena_5()
+def escolhas_5():
+    global item_escolhido

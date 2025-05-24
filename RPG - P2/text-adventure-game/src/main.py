@@ -5,7 +5,7 @@ import sys
 import colorama
 from colorama import Fore, Back, Style
 from intro import menu, narracao_intro, historia_varkas, narracao1, narracao2
-from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3, cena_4, escolhas_4
+from escolhas import cena_1, escolhas_1, cena_2, escolhas_2, cena_3, escolhas_3, cena_4, escolhas_4, cena_5, escolhas_5
 
 
 
@@ -50,7 +50,12 @@ def main():
 
     escolhas_4()
     os.system('cls' if os.name == 'nt' else 'clear')
+
+    cena_5()
+    os.system('cls' if os.name == 'nt' else 'clear')
     
+    escolhas_5()
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 if __name__ == "__main__":
