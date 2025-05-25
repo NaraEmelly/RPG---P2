@@ -848,7 +848,14 @@ def cena_5():
     ░░░▒░▒▒▒▒░░░░░░▒▒░░░░░░░░░░░░░░░░░░▒▒▒▒▒▓▓▒▓▓▓▓▓▒▒▒▒▒▒▒▒░▒▒░░░░▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒░▒▒▒░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
     """ + Style.RESET_ALL)
-    print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nvocê avança pela floresta, tentando encontrar uma saída." + Style.RESET_ALL)
+    narrador3 = [Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nvocê avança pela floresta, tentando encontrar uma saída." + Style.RESET_ALL]
+
+    for linha in narrador3:
+        for caractere in linha:
+            sys.stdout.write(caractere)
+            sys.stdout.flush()
+            time.sleep(0.03)
+        print()
 
     time.sleep(2)
     input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
@@ -936,11 +943,36 @@ def escolhas_5():
 
         elif item_escolhido == "nada":
             print(Style.BRIGHT + Fore.LIGHTBLUE_EX + "\nComo você imaginou, essas criaturas realmente não são fortes!" + Style.RESET_ALL)
-            print(Style.BRIGHT + Fore.RED + "\nPorem, você não tem uma arma para se defender." + Style.RESET_ALL)
-            print(Style.BRIGHT + Fore.RED + "\nAs criaturas se juntaram e atacaram coletivamente." + Style.RESET_ALL)
+            time.sleep(1)
+
+            narrador4 = [Style.BRIGHT + Fore.RED + 
+                        "\nPorem, você não tem uma arma para se defender.",
+                        "\nAs criaturas se juntaram e atacaram coletivamente." + Style.RESET_ALL
+            ]
+            for linha in narrador4:
+                for caractere in linha:
+                    sys.stdout.write(caractere)
+                    sys.stdout.flush()
+                    time.sleep(0.03)
+                print()
+
+            time.sleep(1)
             print(Style.BRIGHT + Fore.LIGHTWHITE_EX + "\nKael: Então... então é assim... assim que irei morrer?" + Style.RESET_ALL)
-            print(Style.BRIGHT + Fore.RED + "\nKael agonizando de dor, foi brutalmente devorado pelas criaturas" + Style.RESET_ALL)
-            print(Style.BRIGHT + Fore.RED + "\nVocê foi morto pelas criaturas estranhas!" + Style.RESET_ALL)
+            time.sleep(1)
+            
+            narrador5 = [Style.BRIGHT + Fore.RED + 
+                        "\nKael agonizando de dor, foi brutalmente devorado pelas criaturas",
+                        "\nVocê foi morto pelas criaturas estranhas!" + Style.RESET_ALL
+            ]
+
+            for linha in narrador5:
+                for caractere in linha:
+                    sys.stdout.write(caractere)
+                    sys.stdout.flush()
+                    time.sleep(0.3)
+                print()
+
+            time.sleep(1)
             input (Style.BRIGHT + Fore.YELLOW + "\n[ P R E S S  E N T E R ]" + Style.RESET_ALL )
             os.system('cls' if os.name == 'nt' else 'clear')
             print(Style.BRIGHT + Fore.RED + r"""                                                                                                    
@@ -960,11 +992,11 @@ def escolhas_5():
                                                                                                                                                             """ + Style.RESET_ALL)
             print(Style.BRIGHT + Fore.RED + r"""
                                                                                   ◤———————————————————————————————————————◥ 
-                                                                                  |     1. RETORNAR NO ULTIMO CHECKPOINT?  |
+                                                                                  |     1. RETORNAR NO ULTIMO CHECKPOINT? |
                                                                                   ◣———————————————————————————————————————◢""" + Style.RESET_ALL )
             print(Style.BRIGHT + Fore.RED + r"""
                                                                                             ◤————————————————◥ 
-                                                                                            |     2. SAIR     |
+                                                                                            |     2. SAIR    |
                                                                                             ◣————————————————◢""" + Style.RESET_ALL )
             print("\n>>  ", end="")
             retornar = input()
