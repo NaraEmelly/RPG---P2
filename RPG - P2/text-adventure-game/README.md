@@ -63,8 +63,6 @@ O código está disponível no GitHub. Você pode clonar o repositório ou simpl
 
 Antes de começar a jogar, é preciso instalar algumas bibliotecas que o jogo utiliza. No terminal, instale as seguintes dependências:
 	•	colorama
-	•	numpy==1.21.6
-	•	texttable==1.6.7
 
 Ah, e é importante garantir que o Python e o pip estejam instalados corretamente na sua máquina.
 	3.	Abra o projeto no VS Code
