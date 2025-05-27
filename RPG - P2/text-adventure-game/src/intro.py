@@ -51,7 +51,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 def narracao_intro():
     narrativa = [Style.BRIGHT + Fore.LIGHTWHITE_EX +
-        "\nNas terras esquecidas de Eltherra, onde os reinos vivem à sombra dos deuses," 
+        "\nNas terras esquecidas de Eltherra, onde os reinos vivem à sombra dos Deuses, " 
         "nasceu uma chama de esperança: Lumina, a Deusa da Luz. "
 
         "\nCom sua luz pura, ela selou os horrores da escuridão e trouxe séculos de paz."
@@ -59,8 +59,8 @@ def narracao_intro():
         "\nMas das profundezas do vazio, ergueu-se Varkas — o Lorde das Sombras. "
         "Um ser corrompido por ambição, banido por Lumina por desafiar sua ordem sagrada."
 
-        "\nVarkas convocou os antigos espectros, mergulhando o mundo em trevas e caos."
-        "Cidades arderam. Reinos tombaram. E a guerra se iniciou."
+        "\nVarkas convocou os antigos espectros, mergulhando o mundo em trevas e caos. "
+        "As Cidades arderam. Os Reinos tombaram. E a guerra se iniciou."
 
         "\nAgora, cabe aos heróis empunhar a luz de Lumina mais uma vez... " 
         "E destruir Varkas antes que a escuridão consuma tudo."
@@ -85,7 +85,7 @@ def narracao1():
     
     narrativa1 = [Style.BRIGHT + Fore.LIGHTWHITE_EX +
         f"Kael é o Vigia da Brumia.",
-        "Seu corpo, uma sombra do que era, agora é um eco de dor e solidão.",
+        "Seu corpo, uma sombra do que já foi um dia, agora é um eco de dor e solidão.",
         "Mas dentro dele, uma centelha de esperança ainda brilha."+ Style.RESET_ALL]
     
     for linha in narrativa1:
@@ -104,7 +104,7 @@ def narracao2():
         f"Você deve fazer que Kael reuna os fragmentos da Espada Estelar e restaurar o equilíbrio em Aurora.",
         "\nMas cuidado...",
         "\nA escuridão não é apenas uma força externa. Ela também habita dentro de nós.",
-        "E as escolhas podem ser mais difícil do que parece."+ Style.RESET_ALL]
+        "E as escolhas podem ser mais difíceis do que parecem."+ Style.RESET_ALL]
     
     for linha in narrativa2:
         for caractere in linha:
