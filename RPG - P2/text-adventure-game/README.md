@@ -99,6 +99,10 @@ python src/main.py
 * Resolver enigmas
 * Tomar decisões que influenciam o final da história
 
+## 📜 Licença
+
+Este projeto está licenciado sob os termos da licença MIT. Isso significa que você pode usá-lo, modificá-lo e distribuí-lo livremente, desde que mantenha os créditos aos autores.
+
 ## 👤 Autores
 
 * Emanuelly de Oliveira Rodrigues
